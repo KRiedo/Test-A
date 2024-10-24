@@ -8,6 +8,7 @@
 .container-fluid {
     position: relative;
     height: 100vh;
+    overflow: hidden;
 }
 
 .welcome-msg {
@@ -47,8 +48,8 @@
     touch-action: manipulation;
     width: 100%;
     opacity: 0;
-    transform: translateX(-100%);
-    animation: slideInFromLeft 1s ease-in-out 3s forwards;
+    transform: translateY(100vh);
+    animation: slideUp 1s ease-in-out 3s forwards;
 }
 
 .logo {
@@ -88,9 +89,9 @@
     }
 }
 
-@keyframes slideInFromLeft {
+@keyframes slideUp {
     from {
-        transform: translateX(-100%);
+        transform: translateY(100vh);
         opacity: 0;
     }
     to {
