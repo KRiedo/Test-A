@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
         console.log("Button clicked");
     
         lobby.classList.add("d-none"); // Hides lobby
-        gameBoard.style.display = "flex"; // Change to flex or block as needed
+        gameBoard.style.display = "block"; // Change to flex or block as needed
         gameBoard.classList.remove("d-none"); // Ensure it's not hidden by other classes
     
         console.log("Lobby hidden, game board displayed");
